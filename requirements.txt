@@ -1,0 +1,26 @@
+# Intelligent Loan Eligibility Assistant — Phase 1 dependencies
+# Pinned to the versions installed and verified in this environment.
+# LangChain 0.3.x is used deliberately so the case study's RetrievalQA and
+# LLMChain APIs work as written (chosen over LangChain v1).
+
+# Core framework (legacy 0.3.x line — RetrievalQA / LLMChain supported)
+langchain==0.3.30
+langchain-core==0.3.86
+langchain-text-splitters==0.3.11
+langchain-community==0.3.31
+
+# LLM provider: Claude (Anthropic-compatible), per user's vendor key
+langchain-anthropic==0.3.22
+
+# Embeddings: local HuggingFace sentence-transformers (no OpenAI, no API key)
+langchain-huggingface==0.3.1
+sentence-transformers==5.6.0
+
+# Vector store
+faiss-cpu==1.14.3
+
+# Frontend
+streamlit==1.59.1
+
+# Configuration
+python-dotenv==1.2.2
